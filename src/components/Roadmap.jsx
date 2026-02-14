@@ -12,14 +12,15 @@ const Roadmap = () => (
       <Heading tag="Ready to get started" title="What we’re working on" />
 
       <div className="relative grid gap-6 md:grid-cols-2 md:gap-4 md:pb-[7rem]">
-        {roadmap.map((item) => {
+        {roadmap.map((item, index) => {
           const status = item.status === "done" ? "Done" : "In progress";
 
           return (
             <div
-              className={`md:flex even:md:translate-y-[7rem] p-0.25 rounded-[2.5rem] ${
+              className={`md:flex even:md:translate-y-[7rem] p-0.25 rounded-[2.5rem] animate-fade-in-up hover:shadow-lg hover:shadow-color-1/20 transition-all duration-500 ${
                 item.colorful ? "bg-conic-gradient" : "bg-n-6"
               }`}
+              style={{ animationDelay: `${index * 150}ms` }}
               key={item.id}
             >
               <div className="relative p-8 bg-n-8 rounded-[2.4375rem] overflow-hidden xl:p-15">
@@ -50,7 +51,7 @@ const Roadmap = () => (
 
                   <div className="mb-10 -my-10 -mx-15">
                     <img
-                      className="w-full"
+                      className="w-full hover:scale-110 transition-transform duration-500"
                       src={item.imageUrl}
                       width={628}
                       height={426}
@@ -66,10 +67,6 @@ const Roadmap = () => (
         })}
 
         <Gradient />
-      </div>
-
-      <div className="flex justify-center mt-12 md:mt-15 xl:mt-20">
-        <Button href="/roadmap">Our roadmap</Button>
       </div>
     </div>
   </Section>

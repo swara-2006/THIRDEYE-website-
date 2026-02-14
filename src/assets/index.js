@@ -1,4 +1,5 @@
 import brainwave from "./brainwave.svg";
+import thirdeyelogo from "./thirdeyelogo.png"
 import check from "./check.svg";
 import brainwaveSymbol from "./brainwave-symbol.svg";
 import brainwaveWhiteSymbol from "./brainwave-symbol-white.svg";
@@ -23,7 +24,8 @@ import background from "./background.jpg";
 
 import curve from "./hero/curve.png";
 import robot from "./hero/robot.jpg";
-import heroBackground from "./hero/hero-background.jpg";
+import heroBackground from "./hero/hero-background.png";
+import main from "./hero/main.png";
 
 import curve1 from "./collaboration/curve-1.svg";
 import curve2 from "./collaboration/curve-2.svg";
@@ -83,6 +85,7 @@ export {
   brainwaveSymbol,
   brainwaveWhiteSymbol,
   play,
+  thirdeyelogo,
   gradient,
   smallSphere,
   grid,
@@ -101,6 +104,7 @@ export {
   curve,
   robot,
   heroBackground,
+  main,
   curve1,
   curve2,
   discord,

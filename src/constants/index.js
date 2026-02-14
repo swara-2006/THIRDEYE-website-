@@ -39,23 +39,23 @@ import {
 export const navigation = [
   {
     id: "0",
+    title: "Home",
+    url: "#hero",
+  },
+  {
+    id: "1",
+    title: "About",
+    url: "#how-to-use",
+  },
+  {
+    id: "2",
     title: "Features",
     url: "#features",
   },
   {
-    id: "1",
-    title: "Pricing",
-    url: "#pricing",
-  },
-  {
-    id: "2",
-    title: "How to use",
-    url: "#how-to-use",
-  },
-  {
     id: "3",
-    title: "Roadmap",
-    url: "#roadmap",
+    title: "Journey",
+    url: "#journey",
   },
   {
     id: "4",
@@ -78,10 +78,14 @@ export const notificationImages = [notification4, notification3, notification2];
 export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
 
 export const brainwaveServices = [
-  "Photo generating",
-  "Photo enhance",
-  "Seamless Integration",
+  "Vision Intelligence System",
+  "Safety & Alert Protocol",
+  "Smart Navigation Control",
+  "Real-Time Tracking Network",
+  "Braille Instruction Manual",
+  "Cost-Effective Innovation",
 ];
+
 
 export const brainwaveServicesIcons = [
   recording03,
@@ -208,52 +212,54 @@ export const collabApps = [
 export const pricing = [
   {
     id: "0",
-    title: "Basic",
-    description: "AI chatbot, personalized recommendations",
-    price: "0",
+    title: "Phase 1: Ideation",
+    description: "Identifying the problem and conceptualizing the solution",
+    imageUrl: null,
     features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
+      "Researched challenges faced by visually impaired individuals",
+      "Brainstormed innovative solutions combining AI and IoT",
+      "Defined core features: obstacle detection, GPS navigation, health monitoring",
     ],
   },
   {
     id: "1",
-    title: "Premium",
-    description: "Advanced AI chatbot, priority support, analytics dashboard",
-    price: "9.99",
+    title: "Phase 2: Development",
+    description: "Building the smart stick with cutting-edge technology",
+    imageUrl: null,
     features: [
-      "An advanced AI chatbot that can understand complex queries",
-      "An analytics dashboard to track your conversations",
-      "Priority support to solve issues quickly",
+      "Integrated ultrasonic sensors for obstacle detection",
+      "Implemented GPS module for real-time navigation",
+      "Added health monitoring sensors for user safety",
     ],
   },
   {
     id: "2",
-    title: "Enterprise",
-    description: "Custom AI chatbot, advanced analytics, dedicated account",
-    price: null,
+    title: "Phase 3: Testing & Launch",
+    description: "Refining the product through rigorous testing and feedback",
+    imageUrl: null,
     features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
+      "Conducted field tests with visually impaired users",
+      "Gathered feedback and improved user experience",
+      "Prepared for market launch and community outreach",
     ],
   },
 ];
 
+
+
 export const benefits = [
   {
     id: "0",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Front & Overhead Obstacle Detection",
+    text: "Detects both ground-level and overhead obstacles, providing complete environmental awareness for safer movement.",
     backgroundUrl: "./src/assets/benefits/card-1.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
   },
   {
     id: "1",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    title: "Multi-Mode User Feedback",
+    text: "Delivers voice, vibration, and audio feedback to ensure clear and reliable communication in any situation.",
     backgroundUrl: "./src/assets/benefits/card-2.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
@@ -261,16 +267,16 @@ export const benefits = [
   },
   {
     id: "2",
-    title: "Connect everywhere",
-    text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
+    title: "Integrated Voice Navigation",
+    text: "Built-in step-by-step voice navigation powered by smart mapping for independent and confident travel.",
     backgroundUrl: "./src/assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
     imageUrl: benefitImage2,
   },
   {
     id: "3",
-    title: "Fast responding",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Lost Device Finder",
+    text: "Quickly locate your stick using smart band activation with instant audio alerts for easy recovery.",
     backgroundUrl: "./src/assets/benefits/card-4.svg",
     iconUrl: benefitIcon4,
     imageUrl: benefitImage2,
@@ -278,21 +284,52 @@ export const benefits = [
   },
   {
     id: "4",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Emergency Alert System",
+    text: "Instant SOS alerts and real-time location sharing ensure rapid assistance during critical situations.",
     backgroundUrl: "./src/assets/benefits/card-5.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
   },
   {
     id: "5",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    title: "Affordable & Long-Lasting",
+    text: "Cost-effective design with extended battery life, built to be accessible, reliable, and aligned with user needs.",
     backgroundUrl: "./src/assets/benefits/card-6.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
   },
+
+  // ✅ Newly Added Data
+
+  {
+    id: "6",
+    title: "Vision Intelligence System",
+    text: "AI-powered object recognition enhances spatial awareness by identifying surroundings in real time.",
+    backgroundUrl: "./src/assets/benefits/card-1.svg",
+    iconUrl: benefitIcon3,
+    imageUrl: benefitImage2,
+  },
+  {
+    id: "7",
+    title: "Braille Instruction Manual",
+    text: "Comes with a fully accessible Braille manual, ensuring independent setup and operation without external assistance.",
+    backgroundUrl: "./src/assets/benefits/card-2.svg",
+    iconUrl: benefitIcon4,
+    imageUrl: benefitImage2,
+    light: true,
+  },
+  {
+    id: "8",
+    title: "Foldable Seat Support",
+    text: "Transforms into a sturdy foldable seat, providing comfort and rest during long journeys.",
+    backgroundUrl: "./src/assets/benefits/card-3.svg",
+    iconUrl: benefitIcon1,
+    imageUrl: benefitImage2,
+  },
 ];
+
+
+
 
 export const socials = [
   {
@@ -324,5 +361,29 @@ export const socials = [
     title: "Facebook",
     iconUrl: facebook,
     url: "#",
+  },
+];
+
+export const teamMembers = [
+  {
+    id: "0",
+    name: "Team Member 1",
+    degree: "Bachelor of Technology in Computer Science",
+    contribution: "Led the AI and machine learning implementation for obstacle detection",
+    imageUrl: null, // Add your profile image path here
+  },
+  {
+    id: "1",
+    name: "Team Member 2",
+    degree: "Bachelor of Engineering in Electronics",
+    contribution: "Developed the hardware integration and sensor systems",
+    imageUrl: null, // Add your profile image path here
+  },
+  {
+    id: "2",
+    name: "Team Member 3",
+    degree: "Bachelor of Technology in Information Technology",
+    contribution: "Designed the mobile application and GPS navigation features",
+    imageUrl: null, // Add your profile image path here
   },
 ];
