@@ -75,7 +75,7 @@ export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 
 export const notificationImages = [notification4, notification3, notification2];
 
-export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
+export const companyLogos = ["James Dyson", "NextGen", "INSPIRE Awards MANAK"];
 
 export const brainwaveServices = [
   "Vision Intelligence System",
@@ -212,35 +212,32 @@ export const collabApps = [
 export const pricing = [
   {
     id: "0",
-    title: "Phase 1: Ideation",
-    description: "Identifying the problem and conceptualizing the solution",
-    imageUrl: null,
+    title: "Empathy & Ideation",
+    description: "Understanding needs and fast prototyping",
     features: [
-      "Researched challenges faced by visually impaired individuals",
-      "Brainstormed innovative solutions combining AI and IoT",
-      "Defined core features: obstacle detection, GPS navigation, health monitoring",
+      "Talked to visually impaired users to understand real needs",
+      "Built first working stick with fused ultrasonic + IR + IMU data",
+      "Achieved reliable obstacle detection through rapid iteration",
     ],
   },
   {
     id: "1",
-    title: "Phase 2: Development",
-    description: "Building the smart stick with cutting-edge technology",
-    imageUrl: null,
+    title: "Add Intelligence",
+    description: "Embedding advanced AI capabilities",
     features: [
-      "Integrated ultrasonic sensors for obstacle detection",
-      "Implemented GPS module for real-time navigation",
-      "Added health monitoring sensors for user safety",
+      "Embedded on-device computer vision and edge AI",
+      "Intelligent detection of stairs, doors, and vehicles",
+      "Optimized for real-time performance and accuracy",
     ],
   },
   {
     id: "2",
-    title: "Phase 3: Testing & Launch",
-    description: "Refining the product through rigorous testing and feedback",
-    imageUrl: null,
+    title: "Field Validation & Productize",
+    description: "Testing, refinement, and launch",
     features: [
-      "Conducted field tests with visually impaired users",
-      "Gathered feedback and improved user experience",
-      "Prepared for market launch and community outreach",
+      "Iterative user trials and feedback-informed redesign",
+      "Incorporated inputs from PurpleFest community",
+      "Focused on ergonomics, low-power hardware, and modular add-ons with app support",
     ],
   },
 ];
@@ -368,7 +365,7 @@ export const teamMembers = [
   {
     id: "0",
     name: "Team Member 1",
-    degree: "Bachelor of Technology in Computer Science",
+    degree: "Bachelor of Technology in Information Technology",
     contribution: "Led the AI and machine learning implementation for obstacle detection",
     imageUrl: null, // Add your profile image path here
   },
@@ -379,11 +376,5 @@ export const teamMembers = [
     contribution: "Developed the hardware integration and sensor systems",
     imageUrl: null, // Add your profile image path here
   },
-  {
-    id: "2",
-    name: "Team Member 3",
-    degree: "Bachelor of Technology in Information Technology",
-    contribution: "Designed the mobile application and GPS navigation features",
-    imageUrl: null, // Add your profile image path here
-  },
+  
 ];
