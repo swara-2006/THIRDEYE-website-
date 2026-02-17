@@ -3,47 +3,29 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
 const CompanyLogos = ({ className }) => {
-  const scrollRef = useRef(null);
-  const logoContainerRef = useRef(null);
+  const trackRef = useRef(null);
 
   useEffect(() => {
-    if (!logoContainerRef.current) return;
+    if (!trackRef.current) return undefined;
 
-    const container = logoContainerRef.current;
-    const scrollWidth = container.scrollWidth;
-    const parentWidth = container.parentElement.offsetWidth;
-
-    // Clone logos for seamless loop
-    const logos = Array.from(container.children);
-    logos.forEach((logo) => {
-      const clone = logo.cloneNode(true);
-      container.appendChild(clone);
-    });
-
-    // Create continuous scroll animation
-    gsap.to(container, {
-      x: -scrollWidth,
-      duration: 20,
+    const tween = gsap.to(trackRef.current, {
+      xPercent: -50,
+      duration: 15,
       ease: "none",
       repeat: -1,
-      onRepeat: () => {
-        gsap.set(container, { x: 0 });
-      },
     });
 
-    // Pause on hover
-    container.addEventListener("mouseenter", () => {
-      gsap.to(container, { duration: 0.5, timeScale: 0, overwrite: "auto" });
-    });
+    const handleEnter = () => tween.pause();
+    const handleLeave = () => tween.resume();
 
-    container.addEventListener("mouseleave", () => {
-      gsap.to(container, { duration: 0.5, timeScale: 1, overwrite: "auto" });
-    });
+    const track = trackRef.current;
+    track.addEventListener("mouseenter", handleEnter);
+    track.addEventListener("mouseleave", handleLeave);
 
     return () => {
-      container.removeEventListener("mouseenter", () => {});
-      container.removeEventListener("mouseleave", () => {});
-      gsap.killTweensOf(container);
+      track.removeEventListener("mouseenter", handleEnter);
+      track.removeEventListener("mouseleave", handleLeave);
+      tween.kill();
     };
   }, []);
 
@@ -52,17 +34,14 @@ const CompanyLogos = ({ className }) => {
       <h5 className="tagline mb-6 text-center text-n-1/50">
         Our Achievements
       </h5>
-      <div ref={scrollRef} className="overflow-hidden">
-        <ul
-          ref={logoContainerRef}
-          className="flex"
-        >
-          {companyLogos.map(( index) => (
+      <div className="overflow-hidden">
+        <ul ref={trackRef} className="flex w-max gap-8 whitespace-nowrap">
+          {[...companyLogos, ...companyLogos].map((logo, index) => (
             <li
-              className="flex items-center justify-center flex-shrink-0 h-[8.5rem] min-w-[10rem]"
+              className="flex items-center justify-center h-[3rem]"
               key={index}
             >
-              
+              <span className="h5 text-n-1/70">{logo}</span>
             </li>
           ))}
         </ul>

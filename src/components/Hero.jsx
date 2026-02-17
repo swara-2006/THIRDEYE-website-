@@ -63,14 +63,14 @@ const Hero = () => {
                 
                 <ScrollParallax isAbsolutelyPositioned>
                   <Notification
-                    className="hidden absolute -right-[5.5rem] bottom-[11rem] w-[18rem] xl:flex"
+                    className="hidden absolute -right-[5.5rem] bottom-[11rem] w-[18rem] lg:flex"
                     title="Made life easier"
                   />
                 </ScrollParallax>
                 
                 <ScrollParallax isAbsolutelyPositioned>
                   <Notification
-                    className="hidden absolute -left-[5.5rem] top-[11rem] w-[18rem] xl:flex"
+                    className="hidden absolute -left-[5.5rem] top-[11rem] w-[18rem] lg:flex"
                     title="Ensures safety"
                   />
                 </ScrollParallax>
@@ -89,10 +89,10 @@ const Hero = () => {
             />
           </div>
 
-          <BackgroundCircles />
+          <BackgroundCircles parallaxRef={parallaxRef} />
         </div>
 
-        <CompanyLogos className="hidden relative z-10 mt-20 lg:block" />
+        <CompanyLogos className="relative z-10 mt-20" />
       </div>
 
       <BottomLine />

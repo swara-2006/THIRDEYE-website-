@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="container">
           <h2 className="h2 text-center mb-12 md:mb-16 animate-fade-in">Meet Our Team</h2>
           
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mb-16 max-w-6xl mx-auto">
+          <div className="grid gap-6 md:grid-cols-2 mb-16 max-w-4xl mx-auto">
             {teamMembers.map((member, index) => (
               <div
                 key={member.id}
