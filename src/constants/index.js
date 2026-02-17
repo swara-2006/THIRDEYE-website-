@@ -364,17 +364,14 @@ export const socials = [
 export const teamMembers = [
   {
     id: "0",
-    name: "Team Member 1",
+    name: "Rishi Sawant",
     degree: "Bachelor of Technology in Information Technology",
     contribution: "Led the AI and machine learning implementation for obstacle detection",
-    imageUrl: null, // Add your profile image path here
   },
   {
     id: "1",
-    name: "Team Member 2",
+    name: "Soham Sawant",
     degree: "Bachelor of Engineering in Electronics",
     contribution: "Developed the hardware integration and sensor systems",
-    imageUrl: null, // Add your profile image path here
   },
-  
 ];

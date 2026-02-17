@@ -57,12 +57,12 @@ const CompanyLogos = ({ className }) => {
           ref={logoContainerRef}
           className="flex"
         >
-          {companyLogos.map((logo, index) => (
+          {companyLogos.map(( index) => (
             <li
               className="flex items-center justify-center flex-shrink-0 h-[8.5rem] min-w-[10rem]"
               key={index}
             >
-              <img src={logo} width={134} height={28} alt={logo} />
+              
             </li>
           ))}
         </ul>

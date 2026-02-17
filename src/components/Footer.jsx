@@ -30,22 +30,6 @@ const Footer = () => {
                   </div>
                   
                   <div className="relative z-1">
-                    <div className="mb-4">
-                      <div className="w-20 h-20 mx-auto mb-4 bg-n-7 rounded-full border border-n-6 flex items-center justify-center overflow-hidden">
-                        {member.imageUrl ? (
-                          <img 
-                            src={member.imageUrl} 
-                            alt={member.name}
-                            className="w-full h-full object-cover"
-                          />
-                        ) : (
-                          <div className="text-3xl font-bold text-color-1">
-                            {member.name.charAt(0)}
-                          </div>
-                        )}
-                      </div>
-                    </div>
-                    
                     <h5 className="h5 mb-2 text-center">{member.name}</h5>
                     <p className="body-2 text-n-3 text-center mb-4 min-h-[3rem]">
                       {member.degree}
